@@ -39,6 +39,13 @@ padding-left: 0;
   text-decoration: none;
 
 }
+
+.container{
+  width:1200px;
+  padding-left:15px;
+  padding-right:15px;
+  margin: 0 auto;
+}
 /* header */
 
 .header{
@@ -259,12 +266,7 @@ transition: background-color var(--timing--) var(--cubik--);
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.container{
-  width:1200px;
-  padding-left:15px;
-  padding-right:15px;
-  margin: 0 auto;
-}
+
 
 .features{
   display: flex;
