@@ -92,11 +92,11 @@ color:var(--accent-text-color);
 color: var(--primary-text-color);
 }
 
-.contact-list .item + item{
+.contact-list .contact__item + .contact__item{
   margin-left: 50px;
 }
-.contact-list .item:hover
-.contact-list .item:focus{
+.contact-list .contact__item:hover
+.contact-list .contact__item:focus{
 fill:var(--accent-text-color);
 }
 
@@ -130,7 +130,7 @@ color:var(--accent-text-color);
   color:var(--accent-text-color);
 }
 
-.nav__list .nav__link.current::after{
+.nav__list .nav__link--current::after{
 display: inline-block;
 position: absolute;
 content: "";
@@ -1004,10 +1004,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .flex-card .item:nth-child(3n){
 margin-right: 0;
 }
-/* .flex-portfolio-button .item{
-margin-right: 8px;
-padding: 6px 22px;
-} */
+
 .flex-portfolio-button .item:last-child{
 margin-right: 0;
 }
