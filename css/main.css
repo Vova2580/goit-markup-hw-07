@@ -264,7 +264,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-.galery__list, .features, .contact-list, .nav-list {
+.team-social, .team__list, .galery__list, .features, .contact-list, .nav-list {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -272,14 +272,18 @@ body {
   padding-left: 0;
 }
 
-.galery, .features-section, .header {
+.team-social__link {
+  text-decoration: none;
+}
+
+.team, .galery, .features-section, .header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.features-section {
+.team, .features-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -559,4 +563,87 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+/* section3 */
+.team {
+  background-color: var(--secondary-bg-color);
+  display: block;
+}
+.team__title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.team__list {
+  display: flex;
+}
+.team__list .team__item {
+  background-color: var(--light-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__list .team__item:not(:last-child) {
+  margin-right: 30px;
+}
+.team .team__pic {
+  display: block;
+  max-width: 100%;
+}
+.team .team__wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team .team__member {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.team .team__position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.team-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.team-social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #AFB1B8;
+  background-color: var(--light-color);
+  transition: color var(--timing--) var(--cubik--), background-color var(--timing--) var(--cubik--);
+}
+.team-social__link:hover, .team-social__link:focus {
+  color: #FFFFFF;
+  background-color: var(--accent-text-color);
+}
+.team-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */
