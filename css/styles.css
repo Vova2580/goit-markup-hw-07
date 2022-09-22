@@ -52,12 +52,7 @@ padding-left: 0;
 color:var(--light-color);
 border-bottom: 1px solid #ECECEC;
 }
-
-.header__container{
-display: flex;
-}
-
-.nav__logo {
+.logo {
   color:var(--black-logo-color);
   font-family: var(--secondary-font);
   text-decoration: none;  
@@ -68,42 +63,39 @@ display: flex;
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.nav__span-logo{
+.span-logo{
 color:var(--accent-text-color); 
 }
 
 /* site nav */
-
-.nav{
-  display: flex;
-}
-.nav__list{
+.nav-list{
   display: flex;
   align-items: center;
   margin-left: 93px;
-  padding-left: 0;
 }
 
-.nav__list .nav__item:not(:last-child){
+.nav-list .item:not(:last-child){
   margin-right: 50px;
 }
 
-.nav .nav__link{
+.site-nav .nav-link{
 color: var(--primary-text-color);
 }
 
-.contact-list .contact__item + .contact__item{
+.contact-list .item + .item{
   margin-left: 50px;
 }
-.contact-list .contact__item:hover
-.contact-list .contact__item:focus{
+.contact-list .item:hover
+.contact-list .item:focus{
 fill:var(--accent-text-color);
 }
 
 
+.main-nav{
+  display: flex;
+}
 
-
-.nav__link{
+.nav-link{
 position: relative;
 text-decoration: none;
 font-weight: 500;
@@ -121,16 +113,16 @@ transition: color var(--timing--) var(--cubik--);
 
 
 
-.nav .nav__link:hover,
-.nav .nav__link:focus{
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus{
 color:var(--accent-text-color);
 }
 
-.nav .nav__link.current {
+.site-nav .nav-link.current {
   color:var(--accent-text-color);
 }
 
-.nav__list .nav__link--current::after{
+.nav-list .nav-link.current::after{
 display: inline-block;
 position: absolute;
 content: "";
@@ -142,7 +134,7 @@ background-color: var(--accent-text-color);
 border-radius: 2px;
 }
 
-.contact__mail{
+.contact-mail{
     color:var(--secondary-text-color); 
     text-decoration: none;
     font-weight: 500;
@@ -159,7 +151,7 @@ border-radius: 2px;
     transition: color var(--timing--) var(--cubik--);
     
 }
-.contact__phone{
+.contact-phone{
     color:var(--secondary-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -169,7 +161,6 @@ border-radius: 2px;
 
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-left: 30px;
     display: flex;
 
     align-items: center;
@@ -178,18 +169,19 @@ border-radius: 2px;
     
 }
 
-
-
-.contact__mail:hover,
-.contact__phone:hover{
+.nav-list{
+  padding-left: 0;
+}
+.contact-mail:hover,
+.contact-phone:hover{
 color:var(--accent-text-color);
 }
 
-.contact__mail:focus,
-.contact__phone:focus{
+.contact-mail:focus,
+.contact-phone:focus{
   color: var(--accent-text-color);
 }
-.contact__icon{
+.marginsvg{
   fill:currentColor;
   margin-right: 10px;
 }
@@ -200,6 +192,10 @@ justify-content: flex-end;
 align-items: flex-start;
 margin-left: auto;
 fill:var(--secondary-text-color);
+}
+
+.contact{
+display: flex;
 }
 
 
