@@ -1,7 +1,11 @@
 /* section3 */
+
+.team__container {
+  @extend %container;  
+}
 .team {
     @extend %section;
-    @extend %container;
+    
     background-color: var(--secondary-bg-color);
     display: block;
 
