@@ -6,7 +6,7 @@
 
 
 .features {
-    @extend %list;
+  @extend %list;
   display: flex;
   padding-left: 0;
 
@@ -50,8 +50,9 @@
 
   margin-bottom: 30px;
 }
-.visually-hidden{
-    @extend %visually-hidden;
+
+.features-title-hidden {
+  @extend %visually-hidden;
 }
 
 

@@ -289,7 +289,7 @@ body {
   padding-bottom: 94px;
 }
 
-.visually-hidden {
+.features-title-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
