@@ -1,6 +1,6 @@
-/* header */
+
 .header {
-    @extend %container;
+ @extend %container;
   color: var(--light-color);
   border-bottom: 1px solid #ECECEC;
 }

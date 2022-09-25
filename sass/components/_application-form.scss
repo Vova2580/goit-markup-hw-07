@@ -102,6 +102,10 @@ textarea::placeholder-shown {
     &-link {
     color: var(--accent-text-color);
     }
+
+    &-input{
+        @extend %visually-hidden;
+    }
 }
 
 .icon-unchecked {
