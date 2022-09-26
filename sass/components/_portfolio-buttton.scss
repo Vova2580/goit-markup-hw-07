@@ -16,7 +16,9 @@
     @extend %list;
     display: flex;
     justify-content: center;
+    gap: 8px;
     margin-bottom: 50px;
+
 
     & .item:last-child {
     margin-right: 0;

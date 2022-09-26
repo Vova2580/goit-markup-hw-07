@@ -1064,6 +1064,7 @@ textarea::placeholder-shown {
 .flex-portfolio-list {
   display: flex;
   justify-content: center;
+  gap: 8px;
   margin-bottom: 50px;
 }
 .flex-portfolio-list .item:last-child {
